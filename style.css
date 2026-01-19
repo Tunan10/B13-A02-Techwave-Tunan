@@ -201,6 +201,82 @@
   color: #ffffff;
   text-transform: capitalize;
 }
+#techWave {
+  width: 1600px;
+  height: 1121px;
+  background-color: #230e3d;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#techWave h2 {
+  text-align: center;
+  padding-top: 120px;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+}
+.techWave-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 100px);
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 30px;
+  /* border: 2px solid red; */
+  width: 75%;
+  max-width: 1200px;
+  height: 753px;
+  margin: auto;
+  margin-top: 40px;
+}
+.medium-layout,
+.large-layout,
+.extra-large-layout,
+.small-layout {
+  background-color: #35116540;
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+.medium-layout h4,
+.large-layout h4,
+.extra-large-layout h4,
+.small-layout h4 {
+  color: #ffffff;
+  margin-top: 16px;
+}
+.medium-layout p,
+.large-layout p,
+.extra-large-layout p,
+.small-layout p {
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+.medium-layout {
+  grid-column: span 2;
+  grid-row: span 4;
+  padding: 107px 0 0 40px;
+  /* border: 2px solid red; */
+}
+.large-layout {
+  grid-column: span 4;
+  grid-row: span 2;
+  padding: 40px;
+  /* border: 2px solid red; */
+}
+.extra-large-layout {
+  grid-column: span 4;
+  grid-row: span 2;
+  padding: 40px;
+  /* border: 2px solid red; */
+}
+.small-layout {
+  grid-column: span 2;
+  grid-row: span 2;
+  padding: 40px;
+  /* border: 2px solid red; */
+}
+
 @media screen and (max-width: 576px) {
   .container {
     flex-direction: row;
